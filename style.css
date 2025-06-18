@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #1a1a1a;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+.calculator {
+  width: 320px;
+  border: 1px solid #333;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  background-color: #2b2b2b;
+}
+
+.display {
+  background-color: #1a1a1a;
+  color: #fff;
+  font-size: 2.8rem;
+  padding: 20px;
+  text-align: right;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  min-height: 60px;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+}
+
+button {
+  height: 70px;
+  border: none;
+  background-color: #4d4d4d;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #666666;
+}
+
+button:active {
+  background-color: #7a7a7a;
+}
+
+.operator {
+  background-color: #ff9500;
+  color: white;
+}
+
+.operator:hover {
+  background-color: #ffab3e;
+}
+
+.equals {
+  background-color: #ff9500;
+  grid-row: span 2; /* Faz o botão de igual ocupar duas linhas */
+  grid-column: 4 / 5;
+}
+
+.equals:hover {
+  background-color: #ffab3e;
+}
+
+#zero {
+  grid-column: span 2; /* Faz o botão zero ocupar duas colunas */
+}
